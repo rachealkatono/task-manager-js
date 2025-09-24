@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="app-header">
+      <h1>Task Manager</h1>
+      <p class="subtitle">Organize tasks & subtasks</p>
+    </header>
+
+    <section class="input-section">
+      <input id="taskInput" type="text" placeholder="Add a new task and press Enter or click Add" aria-label="New task"/>
+      <button id="addTaskBtn">Add</button>
+    </section>
+
+    <main>
+      <ul id="taskList" class="task-list" aria-live="polite"></ul>
+    </main>
+
+    <footer class="app-footer">
+      <small>Built with plain JavaScript • Data stored in localStorage</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
